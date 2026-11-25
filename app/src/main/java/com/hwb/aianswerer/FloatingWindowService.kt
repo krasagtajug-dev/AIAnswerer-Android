@@ -258,6 +258,7 @@ class FloatingWindowService : Service(), LifecycleOwner, ViewModelStoreOwner,
             gravity = Gravity.TOP or Gravity.START
             x = 0
             y = 200
+            alpha = 0.05f
         }
 
         floatingView = ComposeView(this).apply {
