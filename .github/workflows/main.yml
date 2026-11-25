@@ -22,6 +22,8 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          packages: 'platform-tools'   # ⚡ Tambahkan baris ini untuk mencegah error "Failed to find package 'tools'"
 
       - name: Grant Execute Permission for Gradlew
         run: chmod +x gradlew
